@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F08ACAD2C011C2100315D2A /* SceneKit Scene.scn in Resources */ = {isa = PBXBuildFile; fileRef = 0F08ACAC2C011C2000315D2A /* SceneKit Scene.scn */; };
+		0F08ACAF2C011C5300315D2A /* vvvq.usda in Resources */ = {isa = PBXBuildFile; fileRef = 0F08ACAE2C011C5300315D2A /* vvvq.usda */; };
+		0F08ACB12C01215C00315D2A /* vReal.scn in Resources */ = {isa = PBXBuildFile; fileRef = 0F08ACB02C01215C00315D2A /* vReal.scn */; };
 		0FB214C42C01043B00F9555B /* vqApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB214C32C01043B00F9555B /* vqApp.swift */; };
 		0FB214C62C01043B00F9555B /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB214C52C01043B00F9555B /* Persistence.swift */; };
 		0FB214C92C01043B00F9555B /* vq.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0FB214C72C01043B00F9555B /* vq.xcdatamodeld */; };
@@ -16,6 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0F08ACAC2C011C2000315D2A /* SceneKit Scene.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "SceneKit Scene.scn"; sourceTree = "<group>"; };
+		0F08ACAE2C011C5300315D2A /* vvvq.usda */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = vvvq.usda; sourceTree = "<group>"; };
+		0F08ACB02C01215C00315D2A /* vReal.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = vReal.scn; sourceTree = "<group>"; };
 		0FB214C02C01043B00F9555B /* vq.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = vq.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FB214C32C01043B00F9555B /* vqApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vqApp.swift; sourceTree = "<group>"; };
 		0FB214C52C01043B00F9555B /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
@@ -61,7 +67,10 @@
 				0FB214CA2C01043B00F9555B /* ContentView.swift */,
 				0FB214CC2C01044000F9555B /* Assets.xcassets */,
 				0FB214CE2C01044000F9555B /* vq.entitlements */,
+				0F08ACAC2C011C2000315D2A /* SceneKit Scene.scn */,
 				0FB214C72C01043B00F9555B /* vq.xcdatamodeld */,
+				0F08ACB02C01215C00315D2A /* vReal.scn */,
+				0F08ACAE2C011C5300315D2A /* vvvq.usda */,
 				0FB214CF2C01044000F9555B /* Preview Content */,
 			);
 			path = vq;
@@ -133,8 +142,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F08ACB12C01215C00315D2A /* vReal.scn in Resources */,
 				0FB214D12C01044000F9555B /* Preview Assets.xcassets in Resources */,
 				0FB214CD2C01044000F9555B /* Assets.xcassets in Resources */,
+				0F08ACAD2C011C2100315D2A /* SceneKit Scene.scn in Resources */,
+				0F08ACAF2C011C5300315D2A /* vvvq.usda in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +284,7 @@
 		0FB214D52C01044000F9555B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = vq/vq.entitlements;
@@ -300,7 +313,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = tech.victorstudio.vq;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "xrsimulator xros watchsimulator watchos macosx iphonesimulator iphoneos driverkit appletvsimulator appletvos";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -310,6 +324,7 @@
 		0FB214D62C01044000F9555B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = vq/vq.entitlements;
@@ -338,7 +353,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = tech.victorstudio.vq;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "xrsimulator xros watchsimulator watchos macosx iphonesimulator iphoneos driverkit appletvsimulator appletvos";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
